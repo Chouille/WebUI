@@ -1,0 +1,30 @@
+html{
+    margin: 0pw;
+}
+
+header{
+    background-color: #222222;
+    color: #fff;
+}
+
+
+aside.left-panel{
+    background-color: aqua;
+    height: 100vh;
+    padding: 0;
+    vertical-align: top;
+    width: 280px;
+    -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    z-index: 999;
+}
+
+main {
+    background: #f1f2f7;
+    margin-left: 280px;
+
+}
