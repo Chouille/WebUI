@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MS365 style</title>
+        <link href="../../../assets/bootstrap/5.3.2/css/bootstrap.min.css"  rel="stylesheet">
+        <link rel="stylesheet" href="../../../assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+        <link href="./style.css"  rel="stylesheet">
+    </head>
+	<body>
+        <header class="p-2 text-bg-dark">
+            <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainsidebar" aria-controls="mainsidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </button>
+
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    
+                    <div class="navbar" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div>
+            <nav id="mainsidebar" class="mainsidebar collapse navbar-collapse">
+
+                <div class="flex-shrink-0 p-3">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+                    <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    <span class="fs-5 fw-semibold">Collapsible</span>
+                    </a>
+                    <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        Home
+                        </button>
+                        <div class="collapse" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none">Overview</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none">Updates</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none">Reports</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Dashboard
+                        </button>
+                        <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                        Orders
+                        </button>
+                        <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                        Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+            <main>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi libero, imperdiet non pharetra rutrum, mattis at elit. Suspendisse pretium odio dictum imperdiet ultricies. Etiam quam dolor, pellentesque non nunc in, egestas volutpat nisl. Morbi fringilla elit auctor, gravida nibh eu, blandit mauris. Nulla interdum purus libero, sit amet porta tellus suscipit sed. Etiam feugiat lacus a erat pellentesque, nec posuere magna lacinia. Integer porta, ipsum ut mollis posuere, orci ex consectetur risus, quis venenatis dui dolor sit amet turpis. Maecenas rhoncus, lectus eu dapibus efficitur, neque urna condimentum dolor, ut suscipit erat nisl sit amet mi. Donec accumsan lacus aliquet arcu faucibus iaculis. Praesent lobortis pulvinar urna, eu mattis metus dictum a. Donec non quam nisl. In vel erat lacus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi libero, imperdiet non pharetra rutrum, mattis at elit. Suspendisse pretium odio dictum imperdiet ultricies. Etiam quam dolor, pellentesque non nunc in, egestas volutpat nisl. Morbi fringilla elit auctor, gravida nibh eu, blandit mauris. Nulla interdum purus libero, sit amet porta tellus suscipit sed. Etiam feugiat lacus a erat pellentesque, nec posuere magna lacinia. Integer porta, ipsum ut mollis posuere, orci ex consectetur risus, quis venenatis dui dolor sit amet turpis. Maecenas rhoncus, lectus eu dapibus efficitur, neque urna condimentum dolor, ut suscipit erat nisl sit amet mi. Donec accumsan lacus aliquet arcu faucibus iaculis. Praesent lobortis pulvinar urna, eu mattis metus dictum a. Donec non quam nisl. In vel erat lacus.</p>
+
+                <p>Praesent ultrices justo sit amet est pharetra, eget semper justo porttitor. Vestibulum pulvinar ultrices lacinia. Donec in mauris auctor, facilisis enim eu, condimentum dui. Quisque non pharetra nibh. Praesent ornare elit a elementum suscipit. Quisque ac convallis odio, vel lobortis dui. Cras sapien risus, mattis nec elementum a, euismod at odio. Vestibulum feugiat id tortor id pellentesque. Etiam posuere velit vel feugiat consequat. Duis nec sem vestibulum, ultrices arcu nec, suscipit urna. Donec in lorem dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vulputate ullamcorper diam, sed finibus est aliquet ac. Sed mattis orci vel aliquet scelerisque. Fusce ut porta nisl. Phasellus mattis porttitor ex, non maximus est cursus nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi libero, imperdiet non pharetra rutrum, mattis at elit. Suspendisse pretium odio dictum imperdiet ultricies. Etiam quam dolor, pellentesque non nunc in, egestas volutpat nisl. Morbi fringilla elit auctor, gravida nibh eu, blandit mauris. Nulla interdum purus libero, sit amet porta tellus suscipit sed. Etiam feugiat lacus a erat pellentesque, nec posuere magna lacinia. Integer porta, ipsum ut mollis posuere, orci ex consectetur risus, quis venenatis dui dolor sit amet turpis. Maecenas rhoncus, lectus eu dapibus efficitur, neque urna condimentum dolor, ut suscipit erat nisl sit amet mi. Donec accumsan lacus aliquet arcu faucibus iaculis. Praesent lobortis pulvinar urna, eu mattis metus dictum a. Donec non quam nisl. In vel erat lacus.</p>
+
+                <p>Praesent ultrices justo sit amet est pharetra, eget semper justo porttitor. Vestibulum pulvinar ultrices lacinia. Donec in mauris auctor, facilisis enim eu, condimentum dui. Quisque non pharetra nibh. Praesent ornare elit a elementum suscipit. Quisque ac convallis odio, vel lobortis dui. Cras sapien risus, mattis nec elementum a, euismod at odio. Vestibulum feugiat id tortor id pellentesque. Etiam posuere velit vel feugiat consequat. Duis nec sem vestibulum, ultrices arcu nec, suscipit urna. Donec in lorem dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vulputate ullamcorper diam, sed finibus est aliquet ac. Sed mattis orci vel aliquet scelerisque. Fusce ut porta nisl. Phasellus mattis porttitor ex, non maximus est cursus nec.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi libero, imperdiet non pharetra rutrum, mattis at elit. Suspendisse pretium odio dictum imperdiet ultricies. Etiam quam dolor, pellentesque non nunc in, egestas volutpat nisl. Morbi fringilla elit auctor, gravida nibh eu, blandit mauris. Nulla interdum purus libero, sit amet porta tellus suscipit sed. Etiam feugiat lacus a erat pellentesque, nec posuere magna lacinia. Integer porta, ipsum ut mollis posuere, orci ex consectetur risus, quis venenatis dui dolor sit amet turpis. Maecenas rhoncus, lectus eu dapibus efficitur, neque urna condimentum dolor, ut suscipit erat nisl sit amet mi. Donec accumsan lacus aliquet arcu faucibus iaculis. Praesent lobortis pulvinar urna, eu mattis metus dictum a. Donec non quam nisl. In vel erat lacus.</p>
+
+                <p>Praesent ultrices justo sit amet est pharetra, eget semper justo porttitor. Vestibulum pulvinar ultrices lacinia. Donec in mauris auctor, facilisis enim eu, condimentum dui. Quisque non pharetra nibh. Praesent ornare elit a elementum suscipit. Quisque ac convallis odio, vel lobortis dui. Cras sapien risus, mattis nec elementum a, euismod at odio. Vestibulum feugiat id tortor id pellentesque. Etiam posuere velit vel feugiat consequat. Duis nec sem vestibulum, ultrices arcu nec, suscipit urna. Donec in lorem dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vulputate ullamcorper diam, sed finibus est aliquet ac. Sed mattis orci vel aliquet scelerisque. Fusce ut porta nisl. Phasellus mattis porttitor ex, non maximus est cursus nec.</p>
+                <p>Praesent ultrices justo sit amet est pharetra, eget semper justo porttitor. Vestibulum pulvinar ultrices lacinia. Donec in mauris auctor, facilisis enim eu, condimentum dui. Quisque non pharetra nibh. Praesent ornare elit a elementum suscipit. Quisque ac convallis odio, vel lobortis dui. Cras sapien risus, mattis nec elementum a, euismod at odio. Vestibulum feugiat id tortor id pellentesque. Etiam posuere velit vel feugiat consequat. Duis nec sem vestibulum, ultrices arcu nec, suscipit urna. Donec in lorem dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vulputate ullamcorper diam, sed finibus est aliquet ac. Sed mattis orci vel aliquet scelerisque. Fusce ut porta nisl. Phasellus mattis porttitor ex, non maximus est cursus nec.</p>
+
+                <p>Praesent ut tempus sapien. Ut ac eleifend quam. Nullam ut viverra libero. Curabitur eu velit nisl. Duis facilisis eget dolor nec tempor. Suspendisse ac lacus interdum, pellentesque lacus ac, accumsan tortor. Mauris viverra dui felis, vitae sodales lacus lobortis id. Phasellus et gravida lectus, in ornare nulla. Suspendisse eget ante blandit, posuere risus non, eleifend tortor. Mauris rutrum erat vel ligula vulputate pulvinar. Praesent sollicitudin sit amet lorem eget auctor. Nunc pulvinar dui eu odio pharetra, et facilisis neque pulvinar. Duis condimentum nec augue non facilisis.</p>
+            </main>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="../../../assets/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

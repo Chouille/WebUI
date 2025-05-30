@@ -1,0 +1,29 @@
+@import 'root.css';
+
+#page-content{
+    padding: 0rem 0rem;
+    height: 90%;
+    overflow-y: auto;
+}
+
+
+
+#breadcrumb{
+    padding: 5px 15px;
+    height: 40px;
+    background-color: #9748bc;
+    --bs-breadcrumb-divider: '>';
+    --bs-breadcrumb-divider-color: green; 
+}
+
+#breadcrumb >.active {
+    color: green;
+}
+
+#breadcrumb .breadcrumb-item {
+    color: #fff;
+ }
+
+#breadcrumb ol li{
+    color: #fff;
+}

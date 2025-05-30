@@ -1,0 +1,55 @@
+@import 'root.css';
+
+
+header .navbar{
+    background: var(--bg-primary);
+    color: #fff;
+    display: flex;
+    flex-basis: auto;
+    
+}
+
+header .offgridmenu i{
+    width: calc(var(--sidebar-collapsed-width) - 10px);
+    height: calc(var(--sidebar-collapsed-width) - 10px);
+}
+
+header .navbar-brand{
+    color:#FFF;
+    margin-left: 10px;
+}
+header .navbar{
+    background: var(--bg-primary);
+    color: #fff;
+    display: flex;
+    flex-basis: auto;
+    
+}
+
+header .offgridmenu i{
+    width: calc(var(--sidebar-collapsed-width) - 10px);
+    height: calc(var(--sidebar-collapsed-width) - 10px);
+}
+
+header .navbar-brand{
+    color:#FFF;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-nav .nav-link.active{
+    color: #3b7ddd;
+    
+}
+
+.navbar-utility{
+
+}
+
+img.profil-pic{
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+}

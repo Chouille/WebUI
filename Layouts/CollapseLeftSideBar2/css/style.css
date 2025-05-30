@@ -1,0 +1,27 @@
+@import 'root.css';
+@import 'header.css';
+@import 'sidebar.css';
+@import 'page.css';
+@import 'page-sidebar.css';
+@import 'theme.css';
+
+
+
+.main {
+    /* min-height: 100vh; */
+    width: calc(100% - var(--sidebar-collapsed-width));
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+    position: fixed;
+    top: var(--header-height);
+    /* height : calc(100vh - var(--header-height)); */
+    /* padding: 10px 70px 10px 20px !important; */
+}
+
+
+.wrapper {
+    display: flex;
+    padding-left:var(--sidebar-collapsed-width);
+    padding-right: 170px;
+}

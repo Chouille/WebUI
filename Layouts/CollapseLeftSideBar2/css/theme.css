@@ -1,0 +1,14 @@
+:root{
+    --header-height: 50px;
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 50px;
+    --bg-primary: #240046;
+}
+
+
+/*Sidebar*/
+#page-content-sidebar .toolsbar button i{
+    /* background-color: blue; */
+    padding: 0.5rem 0.5rem;
+    color: blue;
+}

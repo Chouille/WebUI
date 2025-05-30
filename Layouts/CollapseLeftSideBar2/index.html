@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Collapse Left Sidebar 2</title>
+
+    <link href="../../assets/bootstrap/5.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link href="../../assets/bootstrap-icons/1.13.1/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
+</head>
+
+<body class="font-sans antialiased">
+    <header>
+        <nav class="navbar fixed-top navbar-expand" style="padding: 0;">
+            <div class="container-fluid gx-0" style="height: 50px;">
+                <a class="navbar-brand" href="#">AppName</a>
+
+                <ul id="app-menu" class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex p-2 pe-0 ms-3 align-items-center" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-2 text-white d-md-block d-none">User name</span>
+                            <img src="./img/profile.jpg" class="avatar img-fluid rounded"
+                                style="width: 40px;height:40px;" alt="Chouille">
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-person-badge"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-clipboard-data"></i>
+                                    Analytics
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-gear-wide"></i>
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-question-circle"></i>
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-door-closed"></i>
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside id="sidebar">
+        <div class="d-flex">
+            <button class="toggle-btn" type="button">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#biens" aria-expanded="false" aria-controls="biens">
+                    <i class="bi bi-building"></i>
+                    <span>Biens</span>
+                </a>
+                <ul id="biens" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-house-door-fill"></i>
+                            Lots
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Immeubles
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Locataires</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    <span>Locations</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-boxes"></i>
+                    <span>Inventaires</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-card-checklist"></i>
+                    <span>Etats des lieux</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#finance" aria-expanded="false" aria-controls="finance">
+                    <i class="bi bi-cash-coin"></i>
+                    <span>Finance</span>
+                </a>
+                <ul id="finance" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link">
+                            <i class="bi bi-people"></i>Finance
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Dépenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Revenus</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Prêts</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Import bancaire</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-gear"></i>
+                            Bilan
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-gear"></i>
+                            Déclarations fiscales
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#documents" aria-expanded="false" aria-controls="documents">
+                    <i class="bi bi-files"></i>
+                    <span>Documents</span>
+                </a>
+                <ul id="documents" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link">
+                            <i class="bi bi-people"></i>
+                            Mes documents
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Mes modèles</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-person-rolodex"></i>
+                    <span>Contacts</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#tools" aria-expanded="false" aria-controls="tools">
+                    <i class="bi bi-tools"></i>
+                    <span>Outils</span>
+                </a>
+                <ul id="tools" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-house-door-fill"></i>
+                            Révisions de loyer
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Régularisation charges
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Equipements
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Déplacements
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Relevés de compteurs
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Rapports
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Indices
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="bi bi-buildings"></i>
+                            Envoi de courrier
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+                <i class="bi bi-door-closed"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+    <div class="wrapper">
+        <main class="main" style="overflow-y:auto;height:100%">
+            breadcrumb
+            <!-- Page Content -->
+            aaaaaaa
+        </main>
+    </div>
+
+
+
+    <script src="../../assets/jquery/3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/popper/popper-2.11.8.js"></script>
+    <script src="../../assets/bootstrap/5.3.6/js/bootstrap.min.js"></script>
+
+
+    <script>
+        const hamBurger = document.querySelector(".toggle-btn");
+
+        hamBurger.addEventListener("click", function () {
+            document.querySelector("#sidebar").classList.toggle("expand");
+        });
+    </script>
+
+</body>
+
+</html>

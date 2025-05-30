@@ -1,0 +1,67 @@
+@import 'root.css';
+
+
+
+#page-content-sidebar{
+    /* background-color:#549825; */
+    position:absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+    width:550px;
+    margin-right:0;
+    color: #000;
+}
+
+#page-content-sidebar form{
+    /* width: 80%; */
+    color: #000;
+}
+
+/* Toolsbar*/
+#page-content-sidebar .toolsbar{
+    /* background-color: blue; */
+    height: 40px;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+#page-content-sidebar .toolsbar button{
+    /* background-color: blue; */
+    height: 40px;
+    padding: 0.5rem 0.5rem;
+    border: 1px #000 solid;
+    color: #000;
+}
+#page-content-sidebar .toolsbar button i{
+    /* background-color: blue; */
+    padding: 0.5rem 0.5rem;
+}
+
+#page-content-sidebar .form-header{
+    vertical-align: middle;
+    height: 40px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 600;
+    font-size: large;
+}
+#page-content-sidebar .content{
+    /* background-color: chocolate; */
+    height: auto;
+    min-height: 40px;
+    padding: 1rem 1rem;
+}
+
+.btn-label {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px 0 0 3px;
+    }
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}

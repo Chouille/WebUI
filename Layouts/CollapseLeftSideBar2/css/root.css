@@ -1,0 +1,12 @@
+:root{
+    --header-height: 50px;
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 50px;
+    --bg-primary: #240046;
+}
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
